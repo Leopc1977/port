@@ -26,10 +26,16 @@ def get_list_infos(query):
         if response.status_code == 200:
             data = response.json()
             res = data["result"]
-            name = res["name"]
-            address = res["formatted_address"]
-            contact = res["formatted_phone_number"]
-            website = None
+            name = None
+            if "name" in res:
+                name = res["name"]
+            address = None
+            if "name" in res:
+                address = res["formatted_address"]
+            contact = None
+            if "formatted_phone_number" in res:
+                contact = res["formatted_phone_number"]
+            website = "None"
             if "website" in res:
                 website = res["website"]
             list_infos.append([name, contact, address, website])

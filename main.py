@@ -7,5 +7,5 @@ main.py:
 
 from src.prospect_auto import prospect_auto
 
-query = "restaurants Paris"
+query = "restaurant paris 19"
 prospect_auto(query)
