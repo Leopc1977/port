@@ -2,7 +2,8 @@
 
 """
 search_request.py:
-    This Python script sends a search request to the Google Places API using a text query and returns the results.
+    This Python script sends a search request to the Google Places API using a
+    text query and returns the results.
 """
 
 import requests

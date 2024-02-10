@@ -2,14 +2,16 @@
 
 """
 get_list_infos.py:
-    This Python script retrieves location information from the Google Places API using identifiers and an API key, 
-    and returns a list of relevant information, such as name, address, contact and website.
+    This Python script retrieves location information from the Google Places
+    API using identifiers and an API key, and returns a list of relevant
+    information, such as name, address, contact and website.
 """
 
 import requests
 
 from src.get_ids import get_ids
 from res.config import KEY
+
 
 def get_list_infos(query):
     list_infos = []

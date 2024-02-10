@@ -2,7 +2,8 @@
 
 """
 get_ids.py:
-    This Python script retrieves unique location identifiers using a search query and returns a list of unique identifiers.
+    This Python script retrieves unique location identifiers using a search
+    query and returns a list of unique identifiers.
 """
 
 from src.search_request import search_request

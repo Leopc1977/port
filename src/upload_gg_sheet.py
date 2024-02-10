@@ -2,10 +2,13 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import pandas as pd
 
+
 def upload_gg_sheet(filepath):
     scope = ['https://spreadsheets.google.com/feeds',
-         'https://www.googleapis.com/auth/drive']
-    credentials = ServiceAccountCredentials.from_json_keyfile_name('res/prospect-auto-944271ae2f64.json', scope)
+             'https://www.googleapis.com/auth/drive']
+    creds_filepath = 'res/prospect-auto-944271ae2f64.json'
+    credentials = ServiceAccountCredentials.from_json_keyfile_name(
+        creds_filepath, scope)
     gc = gspread.authorize(credentials)
 
     spreadsheet_name = "Prospect"

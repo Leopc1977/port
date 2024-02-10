@@ -2,13 +2,15 @@
 
 """
 prospect_auto.py:
-    This Python script automates the search for {query} and exports them to an Excel file.
+    This Python script automates the search for {query} and exports them to an
+    Excel file.
 """
 
 from src.get_list_infos import get_list_infos
 from src.list_to_excel import list_to_excel
 from src.list_to_csv import list_to_csv
 from src.upload_gg_sheet import upload_gg_sheet
+
 
 def prospect_auto(query):
     list_infos = get_list_infos(query)

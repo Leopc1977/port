@@ -7,3 +7,4 @@ res/.DS_Store
 res/prospect-auto-944271ae2f64.json
 donnees.csv
 .DS_Store
+src/template_file.py
