@@ -1,3 +1,11 @@
+#!/usr/bin/env python
+
+"""
+upload_gg_sheet.py:
+    This Python script downloads data from a CSV file
+    into a Google Sheets spreadsheet.
+"""
+
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import pandas as pd
@@ -18,6 +26,7 @@ def upload_gg_sheet(filepath):
     try:
         sh = gc.open(spreadsheet_name)
     except gspread.SpreadsheetNotFound:
+        #Ne marche pas
         sh = gc.create(spreadsheet_name)
 
     worksheet = sh.get_worksheet(0)

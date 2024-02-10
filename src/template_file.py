@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 
 """
-loading_animation.py:
-    print graphical loading progression into the terminal
+template_file.py:
+    This Python file serves as a template and can be used as a starting point
+    for new scripts. It imports standard libraries, third-party packages and
+    local sources.
 """
 
 import os   # standard library, [3]

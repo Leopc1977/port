@@ -4,6 +4,9 @@
 get_ids.py:
     This Python script retrieves unique location identifiers using a search
     query and returns a list of unique identifiers.
+
+    return:
+        List of IDs:String
 """
 
 from src.search_request import search_request
@@ -20,5 +23,5 @@ def get_ids(query):
             unique_results[place_id] = place_id
 
     unique_results_list = list(unique_results.values())
-
+    print(type(unique_results_list[0]))
     return unique_results_list

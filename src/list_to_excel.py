@@ -4,6 +4,9 @@
 list_to_excel.py:
     This Python script converts a list of prospect data into an Excel file with
     Prospect, Contact, Address and Site columns.
+
+    return:
+        None
 """
 
 from openpyxl import Workbook
@@ -18,4 +21,5 @@ def list_to_excel(tableau):
     for ligne in tableau:
         ws.append(ligne)
     wb.save("google_maps_results.xlsx")
+
     return None

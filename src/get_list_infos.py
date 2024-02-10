@@ -5,6 +5,10 @@ get_list_infos.py:
     This Python script retrieves location information from the Google Places
     API using identifiers and an API key, and returns a list of relevant
     information, such as name, address, contact and website.
+
+    Return:
+        2D List of places:List[String]
+            ->([name, contact, address, website])
 """
 
 import requests

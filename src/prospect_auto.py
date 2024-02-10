@@ -4,6 +4,9 @@
 prospect_auto.py:
     This Python script automates the search for {query} and exports them to an
     Excel file.
+
+    return:
+        None
 """
 
 from src.get_list_infos import get_list_infos
@@ -17,3 +20,4 @@ def prospect_auto(query):
     list_to_excel(list_infos)
     list_to_csv(list_infos)
     upload_gg_sheet("donnees.csv")
+    return None

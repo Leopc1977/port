@@ -4,6 +4,10 @@
 search_request.py:
     This Python script sends a search request to the Google Places API using a
     text query and returns the results.
+
+    return:
+        JSON request of the request if it exist
+        None
 """
 
 import requests
