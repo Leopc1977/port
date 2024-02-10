@@ -23,5 +23,4 @@ def get_ids(query):
             unique_results[place_id] = place_id
 
     unique_results_list = list(unique_results.values())
-    print(type(unique_results_list[0]))
     return unique_results_list
